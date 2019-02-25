@@ -11,7 +11,7 @@ def get_prefix(bot, msg):
     """A callable Prefix for our bot. This could be edited to allow per server prefixes."""
 
     # Notice how you can use spaces in prefixes. Try to keep them simple though.
-    prefixes = ['.']
+    prefixes = ['4']
 
     return commands.when_mentioned_or(*prefixes)(bot, msg)
 
@@ -266,4 +266,4 @@ async def volume(con, vol: float):
         servers_songs[con.message.server.id].volume = vol
 
 
-bot.run('bot token')
+bot.run('BOT-TOKEN')
